@@ -1,0 +1,39 @@
+{
+  "name": "notion-to-markdown",
+  "version": "0.0.1",
+  "description": "Convert your Notion.so notes to markdown syntax",
+  "main": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
+  "type": "module",
+  "exports": {
+    "import": "./dist/esm/index.js",
+    "require": "./dist/cjs/index.js",
+    "default": "./dist/esm/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --project tsconfig.esm.json & tsc --project tsconfig.cjs.json"
+  },
+  "keywords": [
+    "notion",
+    "markdown",
+    "md"
+  ],
+  "author": {
+    "name": "Otavio Mokarzel Lhamas",
+    "email": "otavio.m.lhamas@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@notionhq/client": "^2.2.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.45.1",
+    "@typescript-eslint/parser": "^5.45.1",
+    "eslint": "^8.29.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "typescript": "^4.9.3"
+  }
+}
